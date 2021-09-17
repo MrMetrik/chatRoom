@@ -7,7 +7,7 @@ ALIAS = input("Choose an alias >>> ")
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_ip = input("Enter server ip address >>>")
-server_port = input("Enter server port number >>>")
+server_port = int(input("Enter server port number >>>"))
 client.connect((server_ip, server_port))
 
 def client_recieve():
