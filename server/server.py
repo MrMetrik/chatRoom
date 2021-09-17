@@ -25,7 +25,7 @@ aliases = []
 # by a client to other clients
 def broadcast(message):
     for client in clients:
-        clients.send(message)
+        client.send(message)
 
 def handle_client(client):
     while True:
